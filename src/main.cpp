@@ -50,7 +50,7 @@ const int SHUTDOWN_PIN = 24;  // Digital input for shutdown circuit
 bool switch_state = false;
 bool shutdown_state = false;
 unsigned long last_state_send = 0;
-const unsigned long STATE_SEND_INTERVAL = 100;  // Send state every 100ms
+const unsigned long STATE_SEND_INTERVAL = 5;  // Send state every 100ms
 
 void setup() {
     Serial.begin(115200);
